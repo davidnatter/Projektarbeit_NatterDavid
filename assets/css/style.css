@@ -176,7 +176,6 @@ p {
     width: 100%;
     border-radius: 50%;
     border: 3px solid white;
-    animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
     height: 2px;
@@ -216,11 +215,13 @@ p {
 /* ********************
 * HERO SECTION */
 #hero {
-    background-image: url(./img/hero-bg.png);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: top center;
+    background-attachment: fixed;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 #hero::after {
     content: '';
@@ -291,6 +292,7 @@ p {
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+    overflow: hidden;
 }
 #services .service-top {
     max-width: 500px;
@@ -355,6 +357,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    overflow: hidden;
 }
 #projects .projects-header h1 {
     margin-bottom: 50px;
@@ -431,6 +434,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
+    overflow: hidden;
 }
 #about .col-left {
     width: 250px;
@@ -482,6 +486,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+    overflow: hidden;
 }
 #contact .contact-items {
     /* max-width: 400px; */
@@ -526,6 +531,7 @@ p {
 * FOOTER */
 #footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    overflow: hidden;
 }
 #footer .footer {
     min-height: 200px;
@@ -546,8 +552,8 @@ p {
     margin-bottom: 30px;
 }
 #footer .social-item {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     margin: 0 5px;
 }
 #footer .social-item img {
@@ -560,6 +566,12 @@ p {
 #footer p {
     color: white;
     font-size: 1.3rem;
+}
+
+#footer a{
+    color: #ffffff;
+    font-style: italic;
+    
 }
 /* END FOOTER
 ******************** */

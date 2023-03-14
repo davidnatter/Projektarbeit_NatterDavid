@@ -51,7 +51,7 @@ if (!empty($header)) : ?>
         * https://www.advancedcustomfields.com/resources/page-link/
         */
             if ($header['link']) {
-                echo '<a href="' . $header['link'] . '" class="btn">' . __('Get Connected', 'wifi') . '</a>';
+                echo '<a href="' . $header['link'] . '" class="cta">' . __('Get Connected', 'wifi') . '</a>';
             } ?>
         </div>
     </header>

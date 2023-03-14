@@ -84,7 +84,7 @@ p {
 
 /* ********************
 * HEADER SECTION */
-#header {
+#header{
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -92,7 +92,7 @@ p {
     width: 100vw;
     height: auto;
 }
-#header .header {
+#header .header{
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
     transition: 0.3s ease background-color;
@@ -573,6 +573,24 @@ p {
     font-style: italic;
     
 }
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+#footer .nav-list ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#footer .nav-list ul li:hover a {
+    color: #fadb5c;
+}
+
+
+
 /* END FOOTER
 ******************** */
 
